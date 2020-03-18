@@ -12,7 +12,7 @@ $query = "SELECT DISTINCT title FROM menu";
 $sql = $pdo->prepare($query);
 $sql->execute() or die("Unable to execute query!");
 while ($row = $sql->fetch(PDO::FETCH_BOTH)) {
-    echo $row['title'] . " ";
+    echo "<a class=\"nav-item nav-link\" href=\"#\">" . $row['title'] . "</a>";
 }
 
 ?>
