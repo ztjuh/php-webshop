@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-sm">
+<nav class="navbar navbar-dark bg-dark navbar-expand-sm">
     <span class="navbar-brand">Webshop</span>
     <button class="navbar-toggler" style="background: #000000" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
         &#9776;
@@ -40,7 +40,7 @@ function sub_menu($array = array(), $parent_id = false) {
             }
             elseif ($item['is_dropdown'] == true) {
                 echo '<li class="dropdown-item dropdown"><a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>' . PHP_EOL;
-                sub_sub_menu($array, 5);
+                sub_sub_menu($array, $array[$parent_id]);
                 echo '</li>' . PHP_EOL;
             }
         }
