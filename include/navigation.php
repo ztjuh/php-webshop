@@ -22,27 +22,27 @@ function main_menu($array, $parent_id = false) {
     if(!empty($array[$parent_id])) {
         foreach ($array[$parent_id] as $item) {
             if ($item['is_dropdown'] == false) {
-                echo '<li class="nav-item"><a class="nav-link" href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
+                echo '<li class="nav-item"><a class="nav-link" href="' . $item['href'] . '">' . $item['name'] . '</a></li>' . PHP_EOL;
             }
             elseif ($item['is_dropdown'] == true) {
-                echo '<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>';
+                echo '<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>' . PHP_EOL;
                 sub_menu($array, $item['id']);
-                echo '</li>';
+                echo '</li>' . PHP_EOL;
             }
         }
     }
 }
 function sub_menu($array = array(), $parent_id = false) {
     if(!empty($array[$parent_id])) {
-        echo '<ul class="dropdown-menu" aria-labelledby="dropdown2">';
+        echo '<ul class="dropdown-menu" aria-labelledby="dropdown2">' . PHP_EOL;
         foreach ($array[$parent_id] as $item) {
             if ($item['is_dropdown'] == false) {
-                echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
+                echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>' . PHP_EOL;
             }
             elseif ($item['is_dropdown'] == true) {
-                echo '<li class="dropdown-item dropdown"><a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>';
+                echo '<li class="dropdown-item dropdown"><a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>' . PHP_EOL;
                 sub_sub_menu($array, $item['menu_parent']);
-                echo '</li>';
+                echo '</li>' . PHP_EOL;
             }
         }
         echo "</ul>";
@@ -51,14 +51,14 @@ function sub_menu($array = array(), $parent_id = false) {
 
 function sub_sub_menu($array = array(), $parent_id = false) {
     if(!empty($array[$parent_id])) {
-        echo '<ul class="dropdown-menu" aria-labelledby="dropdown2-1">';
+        echo '<ul class="dropdown-menu" aria-labelledby="dropdown2-1">' . PHP_EOL;
         foreach ($array[$parent_id] as $item) {
             if ($item['is_dropdown'] == false) {
-                echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
+                echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>' . PHP_EOL;
             }
         }
         //echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
-        echo "</ul>";
+        echo "</ul>" . PHP_EOL;
     }
 }
 
