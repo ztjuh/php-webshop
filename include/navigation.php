@@ -1,4 +1,4 @@
-<nav class="navbar navbar-fixed-top navbar-dark bg-dark navbar-expand-sm">
+<nav class="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-sm">
     <span class="navbar-brand">Webshop</span>
     <button class="navbar-toggler" style="background: #000000" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
         &#9776;
