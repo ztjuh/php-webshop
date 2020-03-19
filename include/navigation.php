@@ -11,8 +11,56 @@
 $query = "SELECT DISTINCT * FROM menu";
 $sql = $pdo->prepare($query);
 $sql->execute() or die("Unable to execute query!");
-while ($row = $sql->fetch(PDO::FETCH_BOTH)) {
-    echo "<a class=\"nav-item nav-link\" href=\"" . $row['url'] . "\">" . $row['title'] . "</a> ";
+function menu_builder($db, $parent_id) {
+    $sql = $db->prepare("SELECT * FROM menu WHERE status = 1 ORDER BY position ASC");
+    if($sql->execute()) {
+        while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
+            $array[$row['menu_sub_id']][] = $row;
+        }
+        main_menu1($array);
+    }
+}
+function main_menu($array, $parent_id = false) {
+    if(!empty($array[$parent_id])) {
+        foreach ($array[$parent_id] as $item) {
+            if ($item['dropdown'] == false) {
+                echo '<li class="nav-item active"><a class="nav-link" href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
+            }
+            elseif ($item['dropdown'] == true) {
+                echo '<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>';
+                sub_menu1($array, $item['menu_id']);
+                echo '</li>';
+            }
+        }
+    }
+}
+function sub_menu($array = array(), $parent_id = false) {
+    if(!empty($array[$parent_id])) {
+        echo '<ul class="dropdown-menu" aria-labelledby="dropdown2">';
+        foreach ($array[$parent_id] as $item) {
+            if ($item['dropdown'] == false) {
+                echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
+            }
+            elseif ($item['dropdown'] == true) {
+                echo '<li class="dropdown-item dropdown"><a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>';
+                sub_sub_menu1($array, $item['menu_id']);
+                echo '</li>';
+            }
+        }
+        echo "</ul>";
+    }
+}
+
+function sub_sub_menu($array = array(), $parent_id = false) {
+    if(!empty($array[$parent_id])) {
+        echo '<ul class="dropdown-menu" aria-labelledby="dropdown2-1">';
+        foreach ($array[$parent_id] as $item) {
+            if ($item['dropdown'] == false) {
+                echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
+            }
+        }
+        echo "</ul>";
+    }
 }
 
 ?>
