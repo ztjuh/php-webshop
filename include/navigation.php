@@ -22,7 +22,7 @@ function main_menu($array, $parent_id = false) {
     if(!empty($array[$parent_id])) {
         foreach ($array[$parent_id] as $item) {
             if ($item['dropdown'] == false) {
-                echo '<li class="nav-item active"><a class="nav-link" href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
+                echo '<li class="nav-item"><a class="nav-link" href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
             }
             elseif ($item['dropdown'] == true) {
                 echo '<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>';
