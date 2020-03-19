@@ -24,7 +24,7 @@ function main_menu($array, $parent_id = false) {
             if ($item['is_dropdown'] == false) {
                 echo '<li class="nav-item"><a class="nav-link" href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
             }
-            elseif ($item['dropdown'] == true) {
+            elseif ($item['is_dropdown'] == true) {
                 echo '<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>';
                 sub_menu($array, $item['id']);
                 echo '</li>';
@@ -53,7 +53,7 @@ function sub_sub_menu($array = array(), $parent_id = false) {
     if(!empty($array[$parent_id])) {
         echo '<ul class="dropdown-menu" aria-labelledby="dropdown2-1">';
         foreach ($array[$parent_id] as $item) {
-            if ($item['dropdown'] == false) {
+            if ($item['is_dropdown'] == false) {
                 echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
             }
         }
