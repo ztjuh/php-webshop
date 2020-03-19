@@ -14,7 +14,7 @@ function menu_builder($pdo, $parent_id) {
         while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
             $array[$row['menu_sub_id']][] = $row;
         }
-        main_menu1($array);
+        main_menu($array);
     }
 }
 
