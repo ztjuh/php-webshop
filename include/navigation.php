@@ -40,7 +40,7 @@ function sub_menu($array = array(), $parent_id = false) {
             }
             elseif ($item['is_dropdown'] == true) {
                 echo '<li class="dropdown-item dropdown"><a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>' . PHP_EOL;
-                sub_sub_menu($array, 8);
+                sub_sub_menu($array, 5);
                 echo '</li>' . PHP_EOL;
             }
         }
