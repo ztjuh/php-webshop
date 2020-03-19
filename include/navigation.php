@@ -57,6 +57,7 @@ function sub_sub_menu($array = array(), $parent_id = false) {
                 echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a>BLED/li>';
             }
         }
+        echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a>BLED/li>';
         echo "</ul>";
     }
 }
