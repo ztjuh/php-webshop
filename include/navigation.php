@@ -41,7 +41,7 @@ function sub_menu($array = array(), $parent_id = false) {
             }
             elseif ($item['is_dropdown'] == true) {
                 echo '<li class="dropdown-item dropdown"><a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>' . PHP_EOL;
-                sub_sub_menu($array, $item['menu_parent']);
+                sub_sub_menu($array, 8);
                 echo '</li>' . PHP_EOL;
             }
         }
@@ -49,7 +49,7 @@ function sub_menu($array = array(), $parent_id = false) {
     }
 }
 
-function sub_sub_menu($array = array(), $parent_id = 8) {
+function sub_sub_menu($array = array(), $parent_id = false) {
     if(!empty($array[$parent_id])) {
         echo '<ul class="dropdown-menu" aria-labelledby="dropdown2-1">' . PHP_EOL;
         var_dump($array[$parent_id]);
