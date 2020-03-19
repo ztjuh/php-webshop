@@ -38,10 +38,10 @@ function sub_menu($array = array(), $parent_id = false) {
             if ($item['is_dropdown'] == false) {
                 echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>' . PHP_EOL;
             }
-            elseif ($item['is_dropdown'] == true) {
-                echo '<li class="dropdown-item dropdown"><a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>' . PHP_EOL;
-                sub_sub_menu($array, $item['menu_parent']);
-                echo '</li>' . PHP_EOL;
+            //elseif ($item['is_dropdown'] == true) {
+            //    echo '<li class="dropdown-item dropdown"><a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>' . PHP_EOL;
+            //    sub_sub_menu($array, $item['menu_parent']);
+            //    echo '</li>' . PHP_EOL;
             }
         }
         echo "</ul>";
