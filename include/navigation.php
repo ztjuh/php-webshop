@@ -7,12 +7,9 @@
         <ul class="navbar-nav mr-auto">
 
 <?php
-$query = "SELECT DISTINCT * FROM menu";
-$sql = $pdo->prepare($query);
-$sql->execute() or die("Unable to execute query!");
 
 function menu_builder($pdo, $parent_id) {
-    $sql = $db->prepare("SELECT * FROM menu WHERE status = 1 ORDER BY position ASC");
+    $sql = $pdo->prepare("SELECT * FROM menu WHERE status = 1 ORDER BY position ASC");
     if($sql->execute()) {
         while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
             $array[$row['menu_sub_id']][] = $row;
@@ -64,7 +61,7 @@ function sub_sub_menu($array = array(), $parent_id = false) {
     }
 }
 
-menu_builder($db, 0)
+menu_builder($pdo, 0)
 
 ?>
         </ul>
