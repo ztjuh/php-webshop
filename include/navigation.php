@@ -54,10 +54,10 @@ function sub_sub_menu($array = array(), $parent_id = false) {
         echo '<ul class="dropdown-menu" aria-labelledby="dropdown2-1">' . PHP_EOL;
         foreach ($array[$parent_id] as $item) {
             if ($item['is_dropdown'] == false) {
-                echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>' . PHP_EOL;
+                //echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>' . PHP_EOL;
             }
         }
-        //echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
+        echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
         echo "</ul>" . PHP_EOL;
     }
 }
