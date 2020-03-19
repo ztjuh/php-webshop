@@ -54,7 +54,7 @@ function sub_sub_menu($array = array(), $parent_id = false) {
         echo '<ul class="dropdown-menu" aria-labelledby="dropdown2-1">';
         foreach ($array[$parent_id] as $item) {
             if ($item['is_dropdown'] == false) {
-                echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a></li>';
+                echo '<li class="dropdown-item"><a href="' . $item['href'] . '">' . $item['name'] . '</a>BLED/li>';
             }
         }
         echo "</ul>";
