@@ -49,7 +49,7 @@ function sub_menu($array = array(), $parent_id = false) {
     }
 }
 
-function sub_sub_menu($array = array(), $parent_id = false) {
+function sub_sub_menu($array = array(), $parent_id = 8) {
     if(!empty($array[$parent_id])) {
         echo '<ul class="dropdown-menu" aria-labelledby="dropdown2-1">' . PHP_EOL;
         var_dump($array[$parent_id]);
