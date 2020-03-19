@@ -75,7 +75,7 @@ else {
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-outline-success btn-block">Inloggen</button><br>
+                    <button class="btn btn-outline-success btn-block">Login</button><br>
                     <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#popUpForgot">Forgot password?</a>
                 </div>
             </form>
