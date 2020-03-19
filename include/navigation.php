@@ -26,7 +26,7 @@ function main_menu($array, $parent_id = false) {
             }
             elseif ($item['dropdown'] == true) {
                 echo '<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' . $item['name'] . '</a>';
-                sub_menu($array, $item['menu_id']);
+                sub_menu($array, $item['id']);
                 echo '</li>';
             }
         }
