@@ -12,7 +12,7 @@ function menu_builder($pdo, $parent_id) {
     $sql = $pdo->prepare("SELECT * FROM menu WHERE status = 1 ORDER BY position ASC");
     if($sql->execute()) {
         while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
-            $array[$row['menu_id']][] = $row;
+            $array[$row['menu_parent']][] = $row;
         }
         main_menu($array);
     }
