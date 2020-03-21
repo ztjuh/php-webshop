@@ -19,7 +19,7 @@ $from_email = "norepy@ztjuh.tk";
 $from_name = "Alex Mester";
 
 //Session directory
-$location = "webshop-bootstrap4/";
+$location = "webshop/";
 $session_dir = "/webshop_session";
     
 // Check the DB connection
