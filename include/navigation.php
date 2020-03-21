@@ -11,6 +11,8 @@
 function menu_builder($pdo, $parent_id) {
     $sql = $pdo->prepare("
     SELECT
+    menu.id,
+    products.id,
     menu_parent,
     href,
     name,
