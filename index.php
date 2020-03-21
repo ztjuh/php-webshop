@@ -7,68 +7,7 @@ require_once 'include/navigation.php';
 
 <div class="container">
 
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
-Wtf is going on.<br>Wtf is going on.<br>
+
     
 </div>
 
