@@ -9,9 +9,19 @@
 <?php
 
 function menu_builder($pdo, $parent_id) {
-    $sql = $pdo->prepare("SELECT id, menu_parent, href, name, is_dropdown FROM menu, products 
-    WHERE menu.status = menu_status AND menu.position = menu_position AND menu_status = 1 
-    ORDER BY menu_position ASC");
+    $sql = $pdo->prepare("
+    SELECT
+    menu_parent,
+    href,
+    name,
+    is_dropdown
+FROM
+    menu,
+    products
+WHERE
+	menu.status = 1
+ORDER BY
+    menu.position ASC");
     if($sql->execute()) {
         while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
             $array[$row['menu_parent']][] = $row;
