@@ -2,6 +2,8 @@
 
 All Glory to my Lord, Jesus Christ!
 
+**All Glory to Jesus Christ, HALLELUJAH AND AMEN!**
+
 A complete e-commerce solution with MySQL database backend and PayPal payment integration for your PHP webshop.
 
 ## 🎯 Features
@@ -363,4 +365,6 @@ This webshop integration is provided as-is. Follow PayPal's terms of service for
 
 **Made with ❤️ and faith in Jesus Christ**
 
-**Happy selling! May your business prosper.**
+**All Glory to Jesus Christ, HALLELUJAH AND AMEN!**
+
+**Happy selling! May your business prosper in His blessing.**
