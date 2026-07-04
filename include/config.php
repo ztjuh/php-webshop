@@ -8,7 +8,7 @@ setlocale(LC_MONETARY, 'nl_NL.utf8');
 //SQL data
 $sql_host = "localhost";
 $sql_user = "webshop";
-$sql_pass = "LXyZp8T3ndmufU4u";
+$sql_pass = "";
 $sql_db = "webshop_bootstrap4";
 
 //Webshop naam
